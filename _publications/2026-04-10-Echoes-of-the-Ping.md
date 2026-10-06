@@ -17,5 +17,5 @@ conference_presentations:
 slidesurl: ''
 paperurl: ''
 bibtexurl: ''
-citation: '<span style="font-style: normal;">Submitted to <i>Management Science</i>'
+citation: '<span style="font-style: normal;">Major Revision at <i>Management Science</i>'
 ---
