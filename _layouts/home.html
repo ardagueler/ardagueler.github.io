@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+{% comment %}
+  Front-page layout: the shared profile column (large round portrait, name,
+  position, links) next to a narrow text column. Stacks into a single centered
+  column on small screens. Styles live in _sass/layout/_home.scss.
+{% endcomment %}
+
+<div id="main" class="profile-layout profile-layout--home" role="main">
+  {% include profile-card.html home=true %}
+
+  <article class="profile-layout__content page__content" itemscope itemtype="http://schema.org/CreativeWork">
+    {{ content }}
+  </article>
+</div>

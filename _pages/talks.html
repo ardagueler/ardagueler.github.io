@@ -1,7 +1,9 @@
 ---
 layout: single
-title: "Talks & Presentations"
-permalink: /talks/
+title: "Map"
+permalink: /map/
+redirect_from:
+  - /talks/
 author_profile: true
 ---
 
@@ -67,6 +69,9 @@ author_profile: true
   font-style: italic;
   margin-top: 0.15rem;
 }
+.globe-online li {
+  text-align: left;
+}
 .globe-hint {
   font-size: 0.85rem;
   color: var(--global-text-color-light, #888);
@@ -103,11 +108,23 @@ author_profile: true
   window.PRESENTATIONS = {{ site.data.presentations | jsonify }};
 </script>
 
-<p class="globe-hint">Click a dot to see presentations at that location.</p>
+<p>This map shows where I have presented my research at international conferences and workshops. Each dot marks a city: hover over it to see how many events took place there, or click it to see the venue, date, and the paper or project presented. Drag to rotate the globe and scroll to zoom.</p>
 <div class="globe-container">
   <div id="globe-mount" class="globe-mount"></div>
   <div id="globe-panel" class="globe-panel" style="display:none;"></div>
 </div>
+
+{% assign online_events = site.data.presentations | where: "city", "Online" %}
+{% if online_events.size > 0 %}
+<div class="globe-online">
+  <h2>Online</h2>
+  <ul>
+    {% for item in online_events %}
+      <li><strong>{{ item.venue }}</strong>, {{ item.year }}{% if item.papers %}: <i>{{ item.papers | join: "; " }}</i>{% endif %}</li>
+    {% endfor %}
+  </ul>
+</div>
+{% endif %}
 
 <script src="https://unpkg.com/globe.gl@2/dist/globe.gl.min.js"></script>
 

@@ -1,0 +1,27 @@
+---
+layout: archive
+---
+
+{% comment %}
+  Research area page (_research/*.md): navigation to the research overview and
+  the other areas, the page's own text, then the papers tagged with this area
+  (`research:` in _publications/*.md).
+  The list is rendered here rather than inside the Markdown so the Markdown
+  converter doesn't mangle the indented HTML.
+  Front matter: research_area: <area key, e.g. digital-economy>
+{% endcomment %}
+{% include base_path %}
+{% assign areas = site.research | sort: "order_number" %}
+
+<nav class="research-nav" aria-label="Research areas">
+  <a class="research-nav__btn research-nav__btn--back" href="{{ base_path }}/research/"><i class="fas fa-fw fa-arrow-left" aria-hidden="true"></i> Research</a>
+  {% for area in areas %}
+    <a class="research-nav__btn{% if area.url == page.url %} is-current{% endif %}" href="{{ base_path }}{{ area.url }}"{% if area.url == page.url %} aria-current="page"{% endif %}>{{ area.title }}</a>
+  {% endfor %}
+</nav>
+
+{{ content }}
+
+<div class="research-publications">
+  {% include publication-list.html area=page.research_area %}
+</div>

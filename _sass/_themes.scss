@@ -15,7 +15,12 @@ $indent-var                 : 1.3em;
 
 /* System typefaces */
 $serif                      : Georgia, Times, serif;
-$sans-serif                 : -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+$system-sans-serif          : -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+/* Site-wide typeface: TeX Gyre Pagella (Palatino clone, same as the LaTeX CV),
+   self-hosted from /assets/fonts/tex-gyre-pagella (see _fonts.scss).
+   $sans-serif is used throughout the theme, so it points to Pagella as well. */
+$pagella                    : "TeX Gyre Pagella", "Palatino Linotype", Palatino, "Book Antiqua", serif;
+$sans-serif                 : $pagella;
 $monospace                  : Monaco, Consolas, "Lucida Console", monospace;
 
 /* Sans serif typefaces */

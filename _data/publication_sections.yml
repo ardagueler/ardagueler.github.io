@@ -1,0 +1,11 @@
+# Sections used to group papers on /publications/ and on the research area
+# pages, in the same order as the CV. `category` matches the `category:` field
+# of each file in _publications/.
+- category: manuscripts
+  title: "Journal Articles"
+- category: conferences
+  title: "Peer-Reviewed Conference Proceedings"
+- category: workingpapers
+  title: "Working Papers"
+- category: ongoing
+  title: "Ongoing Projects"

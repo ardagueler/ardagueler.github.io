@@ -79,3 +79,84 @@
   border-bottom: 2px solid var(--global-text-color);
   /* No need to repeat pointer-events and cursor here */
 }
+
+/*
+   Colored top bar: same light blue as the footer (.page__footer in _footer.scss).
+   Text is kept dark in both themes so it stays readable on the light blue.
+   ========================================================================== */
+
+$masthead-bg-color: #dbe9f6;
+$masthead-text-color: #222831;
+
+.masthead {
+  // nav links and the mobile menu icon read these variables
+  --global-masthead-link-color: #{$masthead-text-color};
+  --global-masthead-link-color-hover: #{mix(#000, $masthead-text-color, 25%)};
+  background: $masthead-bg-color;
+
+  // no grey divider line under the blue bar
+  &::after {
+    display: none;
+  }
+
+  .greedy-nav,
+  .greedy-nav button,
+  .masthead__menu-item {
+    background: transparent;
+  }
+
+  .greedy-nav .hidden-links {
+    background: $masthead-bg-color;
+  }
+
+  .greedy-nav a,
+  #theme-icon {
+    color: $masthead-text-color;
+  }
+
+  .masthead__menu-item.selected a,
+  .masthead__menu-item.selected a:hover {
+    color: $masthead-text-color;
+    border-bottom-color: $masthead-text-color;
+  }
+}
+
+/* Slimmer top bar, closer to a compact navbar: smaller text, and the menu
+   starts near the left edge of the window instead of a centered container */
+.masthead .masthead__inner-wrap {
+  max-width: none;
+  padding: 0.5em 1.5em;
+}
+
+.masthead .greedy-nav {
+  font-size: calc(0.85em + 2px);
+  // room on the right for the theme toggle (see #theme-toggle below);
+  // jQuery's width() excludes padding, so the greedy-nav overflow logic
+  // automatically leaves this space free
+  padding-right: 40px;
+
+  // dark-mode toggle pinned to the right edge of the bar
+  .visible-links #theme-toggle {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    a {
+      margin: 0;
+    }
+  }
+
+  // the overflow ("more") button sits just left of the toggle
+  button {
+    right: 40px;
+  }
+
+  a {
+    padding: 0.45rem 0;
+  }
+
+  .visible-links li:first-child a {
+    font-size: 1.1em;
+  }
+}

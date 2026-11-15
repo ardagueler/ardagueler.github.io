@@ -14,8 +14,11 @@ main:
   - title: "Research"
     url: /research/
 
-  - title: "Talks"
-    url: /talks/
+  - title: "Map"
+    url: /map/
+
+  - title: "CV"
+    url: /cv/
 
   # - title: "Teaching"
   #   url: /teaching/

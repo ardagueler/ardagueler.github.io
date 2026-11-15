@@ -5,16 +5,14 @@ permalink: /research/
 author_profile: true
 ---
 
-My research lies at the intersection of business, technology, causal inference, and analytical modeling. I adopt a quantitative approach that combines empirical analysis with theoretical and analytical modeling to study complex economic and technological phenomena, with a particular emphasis on causal machine learning.
+Digital platforms have become central intermediaries in the digital economy, shaping how consumers interact with firms, access information, and engage in digital markets. The widespread adoption of smartphones and the growing integration of artificial intelligence and machine learning have greatly expanded the opportunities for platforms to influence consumer behavior, and raise the question of how these technologies should be designed to create value for consumers, firms, and platform operators. My research is guided by an overarching question: **How do digital interventions influence consumer behavior on platforms, and how can causal machine learning help us understand and improve their design?**
 
-A primary focus of my work is the development and application of causal machine learning methods to study causal relationships in complex, high-dimensional settings. I apply these methods in digital marketing environments to analyze how interventions, such as mobile push notifications, affect user behavior. By combining experimental methods (e.g., A/B tests) with causal machine learning, I uncover heterogeneous treatment effects and improve data-driven decision-making through personalized targeting and on- and off-policy evaluation.
+The core of my work examines digital interventions, such as mobile push notifications, in collaboration with an industry partner. Using **large-scale randomized field experiments** and **natural experiments**, I study their indirect effects, spillovers across firms on the same platform, and their personalization. Methodologically, I combine econometric approaches to causal inference with **causal machine learning**, such as meta-learners and causal forests, to estimate heterogeneous treatment effects, and use off-policy evaluation to assess alternative targeting and personalization policies.
 
-A second stream examines how emerging technologies disrupt established markets. Through analytical modeling and empirical analysis, I study how technological innovations, such as blockchain-based mechanisms like enforceable resale fees, reshape market structures and strategic interactions.
+Complementing this empirical work, I use **game-theoretic modeling** and numerical simulations to study how emerging digital technologies and products, such as tokenized digital products or smart durable goods, reshape strategic interactions and competition in digital markets.
 
-A third focus area concerns Human–AI interaction, particularly the role of uncertainty in AI-based decision support systems. Here, I study how uncertainty can be quantified, communicated, and incorporated into AI-based support processes to improve the reliability and adoption of AI systems.
-
-Finally, I work on the application of statistical methods and machine learning in medical contexts. As part of the Volkswagen Foundation–funded project *“From Machine Learning to Machine Teaching,”* I analyze clinical data to better understand diseases such as post-COVID conditions and community-acquired pneumonia.
+A further strand of my work stems from a collaboration with University Hospital Frankfurt. Starting from statistical and data science analyses of clinical data, it has led me to questions of **human–AI decision-making** in high-stakes contexts such as clinical diagnosis, in particular how communicating the uncertainty of AI predictions can foster appropriate reliance on AI.
 
 ---
 
-[Causal Machine Learning](/research/causal-machine-learning/) &nbsp;·&nbsp; [Analytical Modelling](/research/analytical-modelling/) &nbsp;·&nbsp; [Human-AI](/research/human-ai/) &nbsp;·&nbsp; [Medical Analytics](/research/medical-analytics/)
+[Digital Economy: Platforms and Products](/research/digital-economy/) &nbsp;·&nbsp; [Human-AI](/research/human-ai/) &nbsp;·&nbsp; [Clinical Data Science](/research/clinical-data-science/)

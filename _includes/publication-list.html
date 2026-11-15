@@ -1,0 +1,24 @@
+{% comment %}
+  Papers grouped into sections (see _data/publication_sections.yml), each
+  rendered in the publications-page style (archive-single.html).
+  Within a section, papers are ordered by cv_order.
+  Usage:
+    {% include publication-list.html %}                                 all papers
+    {% include publication-list.html area="digital-economy" %}          only papers whose
+                                                                        `research:` list contains the area
+{% endcomment %}
+{% assign sorted_publications = site.publications | sort: "cv_order", "last" %}
+{% for section in site.data.publication_sections %}
+  {% assign title_shown = false %}
+  {% for post in sorted_publications %}
+    {% if post.category != section.category %}{% continue %}{% endif %}
+    {% if include.area %}
+      {% unless post.research contains include.area %}{% continue %}{% endunless %}
+    {% endif %}
+    {% unless title_shown %}
+      <h2 class="archive__subtitle">{{ section.title }}</h2>
+      {% assign title_shown = true %}
+    {% endunless %}
+    {% include archive-single.html %}
+  {% endfor %}
+{% endfor %}

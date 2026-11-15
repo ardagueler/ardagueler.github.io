@@ -88,10 +88,12 @@ publication_category:
     title: 'Books'
   manuscripts:
     title: 'Journal Articles'
+  conferences:
+    title: 'Peer-Reviewed Conference Proceedings'
   workingpapers:
     title: 'Working Papers'
-  conferences:
-    title: 'Conference Proceedings'
+  ongoing:
+    title: 'Ongoing Projects'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews

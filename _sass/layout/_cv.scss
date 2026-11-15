@@ -1,0 +1,128 @@
+/* ==========================================================================
+   CV PAGE (_pages/cv.html)
+   Mirrors the PDF CV: section headings in spaced capitals with a short rule,
+   and two-column rows (date | entry). Stacks on small screens.
+   ========================================================================== */
+
+.cv {
+  margin-top: 0.5em;
+}
+
+.cv-section {
+  margin-bottom: 2em;
+}
+
+.archive .cv-heading,
+.cv-heading {
+  position: relative;
+  margin: 0 0 1em;
+  padding-bottom: 0.45em;
+  font-size: $type-size-5;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--global-text-color);
+  border-bottom: 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 6.5em;
+    height: 2px;
+    background: var(--global-text-color);
+  }
+}
+
+.cv-subheading {
+  margin: 0.9em 0 0.4em;
+  font-style: italic;
+}
+
+.cv-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0 1.25em;
+  margin-bottom: 0.7em;
+  line-height: 1.45;
+
+  @include breakpoint($medium) {
+    grid-template-columns: 9.5em 1fr;
+  }
+}
+
+.cv-date {
+  color: var(--global-text-color);
+
+  @media (max-width: #{$medium - 1px}) {
+    font-weight: 700;
+    font-size: $type-size-5-5;
+  }
+}
+
+.cv-body {
+  min-width: 0;
+  text-align: left;
+}
+
+.cv-detail {
+  display: block;
+  font-size: $type-size-5-5;
+}
+
+.cv-list {
+  margin: 0 0 0.5em;
+  padding-left: 1.6em;
+
+  li {
+    margin-bottom: 0.6em;
+    padding-left: 0.2em;
+    line-height: 1.45;
+    text-align: left;
+  }
+
+  a {
+    word-break: break-all;
+  }
+}
+
+.cv-reference {
+  margin-bottom: 1em;
+  line-height: 1.4;
+}
+
+/* "Last update" line and PDF download button at the top of the CV */
+.cv-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75em;
+  margin: 0 0 2em;
+}
+
+.cv-updated {
+  font-size: $type-size-5-5;
+  font-style: italic;
+}
+
+.archive .cv-download,
+.cv-download {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35em;
+  padding: 0.35em 0.9em;
+  font-size: $type-size-6;
+  color: var(--global-text-color);
+  text-decoration: none;
+  border: 1px solid var(--global-border-color);
+  border-radius: 2em;
+  transition: border-color 0.2s, color 0.2s;
+
+  &:hover {
+    text-decoration: none;
+    border-color: var(--global-link-color);
+    color: var(--global-link-color);
+  }
+}

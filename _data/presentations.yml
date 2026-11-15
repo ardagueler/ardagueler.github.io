@@ -30,9 +30,9 @@
   papers:
     - "You Only Lose Once: Blockchain Gambling Platforms"
 
-- venue: "SIG DITE"
+- venue: "AIS SIG DITE Paper Development Workshop"
   type: "Workshop"
-  year: "2025"
+  year: "September 2025"
   city: "Hamburg"
   country: "Germany"
   lat: 53.5753
@@ -40,7 +40,17 @@
   papers:
     - "De-Throning Platforms: Governing Markets with Post-Sale Control"
 
-- venue: "Statistical Challenges in E-Commerce Research (SCECR)"
+- venue: "Co-Creating Tomorrow: A Workshop on Human-AI Collaboration"
+  type: "Workshop"
+  year: "September 2025"
+  city: "Cologne"
+  country: "Germany"
+  lat: 50.9375
+  lng: 6.9603
+  papers:
+    - "Designing Uncertainty-Aware AI Decision Support Systems"
+
+- venue: "Statistical Challenges in Electronic Commerce Research (SCECR)"
   type: "Conference"
   year: "June 2024"
   city: "Lisbon"
@@ -62,7 +72,7 @@
   papers:
     - "Echoes of the Ping: Indirect Effects of Mobile Notifications on App Engagement"
 
-- venue: "Conference on Digital Experiments (CODE@MIT)"
+- venue: "Conference on Digital Experimentation (CODE@MIT)"
   type: "Conference"
   year: "November 2025"
   city: "Cambridge, MA"
@@ -75,7 +85,7 @@
 
 - venue: "Workshop on Digital Markets (WDM)"
   type: "Workshop"
-  year: "2025"
+  year: "May 2025"
   city: "Rotterdam"
   country: "Netherlands"
   lat: 51.9244
@@ -84,7 +94,7 @@
   papers:
     - "Echoes of the Ping: Indirect Effects of Mobile Notifications on App Engagement"
 
-- venue: "ISMS Marketing Science"
+- venue: "ISMS Marketing Science Conference"
   type: "Conference"
   year: "June 2026"
   city: "Lisbon"

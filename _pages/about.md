@@ -1,14 +1,13 @@
 ---
 permalink: /
 title: "About Me"
-author_profile: true
+layout: home
+author_profile: false
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-Hi there, welcome to my personal website. My name is **Arda Güler**, and I am a PhD candidate and researcher at *Goethe University Frankfurt* working at the Chair of [Information Systems and Information Management](https://www.wiim.uni-frankfurt.de/en/team/arda-gueler) under the supervision of Prof. Oliver Hinz.
+I am a **Doctoral Researcher** at the Chair of [Information Systems and Information Management](https://www.wiim.uni-frankfurt.de/en/team/arda-gueler) at **Goethe University Frankfurt**, supervised by Prof. Dr. Oliver Hinz. Before my doctoral studies, I earned a **B.Sc. and M.Sc. in Mathematics** from the **University of Bremen**, majoring in Statistics with a minor in Psychology.
 
-I hold a Bachelor’s and Master’s degree in Mathematics with a focus on Statistics from the *University of Bremen*. My research focuses on the intersection of business, technology, causal inference, and analytical modeling, combining empirical methods with theoretical modeling.
-
-My work has been published at the *European Conference on Information Systems (ECIS)* and in *Business & Information Systems Engineering (BISE)*. I have presented my research at several international venues, including the *Workshop on Information Technology and Systems (WITS) 2024*, the *Statistical Challenges in E-Commerce Research (SECER) 2024*, the *Workshop on Digital Markets (WDM) 2025*, *CODE@MIT 2025*, and the *Causal Data Science Meeting (CDSM) 2024 and 2025*.
+My research asks how digital interventions, such as mobile push notifications, influence consumer behavior on platforms, and how **causal machine learning** can help us understand and improve their design. To answer these questions, I primarily run **large-scale randomized field experiments** and exploit **natural experiments**, often in collaboration with industry partners. I combine econometric methods with causal ML to estimate heterogeneous treatment effects, and use off-policy evaluation to assess data-driven targeting and personalization policies. Complementing this empirical work, I use **game-theoretic modeling** to study how emerging digital technologies reshape strategic interactions and competition in digital markets. I am also increasingly interested in **human–AI decision-making**, in particular how communicating the uncertainty of AI predictions can foster appropriate reliance in high-stakes settings such as clinical diagnosis.
